@@ -95,3 +95,10 @@ ol {
     height: 140px;
   }
 }
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+  color: #ffffff;
+  border-top: 1px solid #0a0a0a;
+}
