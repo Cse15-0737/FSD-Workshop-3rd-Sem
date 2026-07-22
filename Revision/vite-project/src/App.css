@@ -1,0 +1,119 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #111827 100%);
+}
+
+.login-card {
+  width: min(900px, 100%);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.login-side {
+  padding: 42px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-badge {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.login-side h1 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  color: white;
+}
+
+.login-text {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.form-side {
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #111827;
+}
+
+.form-side label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-side input {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-side input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.form-side button {
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-side button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.25);
+}
+
+.status-message {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.status-message.success {
+  color: #047857;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .login-card {
+    grid-template-columns: 1fr;
+  }
+
+  .login-side,
+  .form-side {
+    padding: 28px;
+  }
+}
