@@ -17,9 +17,12 @@
 //   console.log("good");
 // });
 
-const { EventEmitter } = require("events");
-const eventEmitter = new EventEmitter();
-eventEmitter.on("lunch", () => {
-  console.log("good");
-});
-eventEmitter.emit("lunch");
+// const { EventEmitter } = require("events");
+// const eventEmitter = new EventEmitter();
+// eventEmitter.on("lunch", () => {
+//   console.log("good");
+// });
+// eventEmitter.emit("lunch");
+
+const shyam = require("./xyz.js");
+console.log("hello", shyam);
